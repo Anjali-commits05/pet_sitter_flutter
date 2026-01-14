@@ -1,20 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:pet_ui/View/Dashboard.dart';
+import 'package:pet_ui/View/services.dart';
+import 'package:pet_ui/View/customers.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Pet Sitter App",
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      // Home screen
+      initialRoute: '/',
+      // Named routes for easy navigation
+      routes: {
+        '/': (context) => const PetSitterDashboard(),
+        '/services': (context) => const SitterServices(),
+        '/customers': (context) => const SitterCustomers(),
+      },
     );
   }
 }

@@ -17,3 +17,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/eyeimage.png
+    - assets/images/girl.jpg
+    - assets/images/doctor.png
+    - assets/images/Screenshot_2026-01-14_112527-removebg-preview.png
+    - assets/images/finaldr.png
+    - assets/images/66a2ea284de05f961c38ed77f1c070911d87aaf7.png
