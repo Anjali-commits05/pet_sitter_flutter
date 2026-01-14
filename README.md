@@ -8,7 +8,8 @@
 ![Services](Screenshots/services.png)
 
 ### Customers
-![Customers](screenshots/customers.png)
+![Customers](Screenshots/customers.png)
+
 
 ## 🎯 Key Highlights
 
